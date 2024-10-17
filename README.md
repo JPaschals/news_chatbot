@@ -31,57 +31,66 @@ A chatbot that utilizes Cohere's API to generate headlines, detect tones, and su
    git clone https://github.com/JPaschals/ai-projects.git
 
 2. Navigate to the project directory:
-       cd news_chatbot
+    ```bash
+   cd news_chatbot
    
-3. Create and activate a virtual environment (optional but recommended):
-
+4. Create and activate a virtual environment (optional but recommended):
+    ```bash
       python -m venv venv
-   # On Windows
+  
+# On Windows
+   ```bash
    venv\Scripts\activate
-   # On macOS/Linux
-   source venv/bin/activate
-
-4. Install the required dependencies:
+```
+# On macOS/Linux
+ ```bash
+    source venv/bin/activate
+```
+5. Install the required dependencies:
+     ```bash
      pip install -r requirements.txt
    
-5. Create a .env file in the root directory and add your API keys:
+6. Create a .env file in the root directory and add your API keys:
+      ```bash
       COHERE_API_KEY=your_cohere_api_key
 
 
-##Running the Application
+## Running the Application
 To start the Flask application, run:
-
+```bash
    python app.py
-
+```
 The application will be available at http://127.0.0.1:5000.
 
-##Testing the Chatbot
+## Testing the Chatbot
 You can test the chatbot using Postman or any other API testing tool.
 
 Endpoint: POST /chat
 Request Body:
-   {
+  ```bash
+ {
     "article": "Your article text here",
     "query": "Your question about the article here"
 }
-
-##Example Response
-   {
+```
+## Example Response
+  ```bash
+ {
     "headlines": "Generated headline here",
     "tone": "Detected tone here",
     "summary": "Summary of the article here",
     "dynamic_response": "Response to the user's query here"
 }
 
-
-##License
+```
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ##Acknowledgments
 Cohere for their powerful NLP API.
 Flask for providing a lightweight framework for web applications.
 
-##SQL
+## SQL
 
 
 ### Customization Tips
